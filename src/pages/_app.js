@@ -1,26 +1,21 @@
-import '@/styles/globals.css'
-import Layout from '@/components/Layout'
-import { Sora } from 'next/font/google';
+import '@/styles/globals.css';
+import Layout from '@/components/Layout';
+import Transition from '@/components/Transition';
+import { useRouter } from 'next/router';
+import { AnimatePresence, motion } from 'framer-motion';
 
-// Metadata
-export const metadata = {
-  title: 'Digitl Alchemyst Steven Watkins',
-  description:
-    'Web Application Development Portfolio, for Steven Watkins aka Digitl Alchemyst',
-};
+const App = ({ Component, pageProps }) => {
+  const router = useRouter();
 
-// Font Configuration
-const sora = Sora({
-  subsets: ['latin'],
-  variable: '--fonts-sora',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
-});
-
- const App = ({ Component, pageProps }) => {
   return (
-  <Layout>
-    <Component {...pageProps} />
-  </Layout>
-  )
-}
- export default App;
+    <Layout>
+      <AnimatePresence mode='wait'>
+        <motion.div key={router.route} className='h-full'>
+          <Transition />
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
+    </Layout>
+  );
+};
+export default App;
