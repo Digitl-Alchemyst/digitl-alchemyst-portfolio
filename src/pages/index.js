@@ -10,7 +10,7 @@ const Home = () => {
     <div className='h-full bg-primary/60'>
       {/* Text */}
       <div className='h-full w-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
-        <div className='container mx-auto flex h-full flex-col justify-center text-center xl:pt-40 xl:text-left'>
+        <div className='container mx-auto ml-78 flex h-full flex-col justify-center text-center xl:pt-10 xl:text-left'>
           {/* Title */}
           <motion.h1
             variants={fadeIn('down', 0.3)}
@@ -37,7 +37,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='xl:max-xl xl:mb10 mx-auto mb-10 max-w-sm text-sm xl:mx-0'
+            className='xl:max-xl xl:mb10 mx-auto mb-10 max-w-xl text-sm xl:mx-0'
           >
             An accomplished and versatile technology entrepreneur and artist, I
             have honed my skills through self-guided exploration and hands-on
@@ -73,7 +73,10 @@ const Home = () => {
       {/* Image */}
       <div className='absolute bottom-0 right-0 h-full w-[1200px]'>
         {/* BG Image */}
-        <div className='translate-z-0 h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat absolute' />
+        <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' />
+        
+          {/* <div className='translate-z-0 absolute h-full w-full animate-spin-slow bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-right xl:bg-no-repeat animate-pulse' /> */}
+        
         {/* Particles  */}
         <ParticlesContainer />
         {/* Avatar Image  */}
@@ -82,8 +85,8 @@ const Home = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          transition={{ duration: 1, ease: easeInOut}}
-          className='abasolute -bottom-32 h-full max-h-[676px] w-full max-w-[737px] lg:bottom-0 lg:right-[8%]'
+          transition={{ duration: 1, ease: easeInOut }}
+          className='relative h-full max-h-[476px] w-full max-w-[437px] lg:-bottom-104 lg:right-[-28%]'
         >
           <Avatar />
         </motion.div>
