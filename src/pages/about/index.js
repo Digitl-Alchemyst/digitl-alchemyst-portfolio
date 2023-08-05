@@ -1,3 +1,25 @@
+/* eslint-disable react/jsx-key */
+import Avatar from '@/c/Avatar';
+import Circles from '@/components/Circles';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '#/variants';
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaWordpress,
+  FaFigma,
+} from 'react-icons/fa';
+
+import {
+  SiNextdotjs,
+  SiFramer,
+  SiAdobexd,
+  SiAdobephotoshop,
+} from 'react-icons/si';
+import CountUp from 'react-countup';
 //  data
 const aboutData = [
   {
@@ -71,7 +93,160 @@ const aboutData = [
 ];
 
 const About = () => {
-  return <div>About</div>;
+  const [index, setIndex] = useState(0);
+  return (
+    <div className='h-full bg-slate-700/30 pb-40 pt-60 text-center xl:text-left'>
+      <Circles />
+      {/* Avatar  */}
+      <motion.div
+        variants={fadeIn('right', 0.2)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        className='absolute bottom-0 hidden h-full max-h-[747px] w-full max-w-[637px] xl:flex'
+      >
+        <Avatar />
+      </motion.div>
+      <div className='container mx-auto flex h-full flex-col items-center gap-x-6 xl:flex-row'>
+        {/* Text */}
+        <div className='mb-8 flex-1 flex-col justify-center xl:mb-0'>
+          <motion.h2
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='h2'
+          >
+            Crafting unique{' '}
+            <span className='text-accent'>digital experiences</span> captivating
+            users through{' '}
+            <span className='text-accent2'>alchemical designs</span>
+          </motion.h2>
+          <motion.p
+            variants={fadeIn('right', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='mx-auto mb-6 max-w-[500px] px-2 xl:mx-0 xl:mb-12 xl:px-0'
+          >
+            Throughout my life, I&apos;ve been drawn to the world of technology,
+            and it was in web application development that I found my true
+            passion. Starting with humble experiments in HTML and CSS, I
+            steadily honed my skills, delving into JavaScript and its frameworks
+            to create dynamic and interactive web applications. Late nights were
+            spent tirelessly coding, driven by an unyielding ambition to excel
+            in my craft. As the years passed, I encountered various challenges
+            and learned from both successes and failures. My journey as a web
+            application developer has been one of continuous growth and
+            adaptation. I embraced the ever-changing landscape of technology,
+            staying updated with the latest trends and tools to ensure my work
+            remained innovative and cutting-edge. Sharing my knowledge and
+            contributing to the community became second nature, and I found
+            immense satisfaction in helping aspiring developers along their
+            paths. The projects I&apos;ve undertaken, ranging from startups to
+            established companies, have provided me with valuable experiences
+            that have shaped me into the developer I am today. As I stand at
+            this juncture, I am filled with a profound sense of purpose, ready
+            to face new challenges and create impactful solutions that push the
+            boundaries of web application development.
+          </motion.p>
+          {/* Counters  */}
+          <motion.div
+            variants={fadeIn('right', 0.6)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='md:max-2-xl mx-auto xl:mx-0 xl:max-w-none'
+          >
+            <div className='flex xl:gap-x-4 '>
+              {/* Years of Experience  */}
+              <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
+                <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
+                  <CountUp start={0} end={3} duration={5} /> +
+                </div>
+                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                  Years of experience
+                </div>
+              </div>
+              {/* Satisfied Clients */}
+              <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
+                <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
+                  <CountUp start={0} end={84} duration={5} /> +
+                </div>
+                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                  Satisfied Clients
+                </div>
+              </div>
+              {/* Completed Projects */}
+              <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
+                <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
+                  <CountUp start={0} end={132} duration={5} /> +
+                </div>
+                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                  Projects Completed
+                </div>
+              </div>
+              {/* Open Source Contributions */}
+              <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
+                <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
+                  <CountUp start={0} end={64} duration={5} /> +
+                </div>
+                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                  Open Source Contributions
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+        {/* Info  */}
+        <motion.div
+          variants={fadeIn('left', 0.4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='flex h-[480px] w-full flex-col xl:max-w-[48%]'
+        >
+          <div className='mx-auto mb-4 flex gap-x-4 xl:mx-0 xl:gap-x-8'>
+            {aboutData.map((item, itemIndex) => {
+              return (
+                <div
+                  key={item.index}
+                  onClick={() => setIndex(itemIndex)}
+                  className={`${
+                    index === itemIndex &&
+                    'text-accent2 after:w-[100%] after:bg-accent2 after:transition-all after:duration-300'
+                  } relative cursor-pointer capitalize after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-8 after:bg-white xl:text-lg`}
+                >
+                  {item.title}
+                </div>
+              );
+            })}
+          </div>
+          <div className='gap-y2 flex flex-col items-center rounded-xl border border-sky-400/20 bg-lime-400/20 py-2 xl:items-start xl:gap-y-4 xl:px-2 xl:py-6'>
+            {aboutData[index].info.map((item, itemIndex) => {
+              return (
+                <div
+                  key={itemIndex}
+                  className='flex max-w-max flex-1 flex-col items-center gap-x-2 text-accent2 md:flex-row'
+                >
+                  {/* Title  */}
+                  <div className='mb-2 font-light md:mb-1'>{item.title}</div>
+                  <div className='hidden md:flex'>-</div>
+                  <div className='mb-2 md:mb-1'>{item.stage}</div>
+                  <div className='flex gap-x-4'>
+                    {/* Icons */}
+                    {item.icons?.map((icon, itemIndex) => {
+                      return <div className='text-2xl text-accent'>{icon}</div>;
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
 };
 
 export default About;

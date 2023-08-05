@@ -1,12 +1,7 @@
 /* eslint-disable react/function-component-definition */
 import { Html, Head, Main, NextScript } from 'next/document'
 
-// Metadata
-export const metadata = {
-  title: 'Digitl Alchemyst Steven Watkins',
-  description:
-    'Web Application Development Portfolio, for Steven Watkins aka Digitl Alchemyst',
-};
+<link rel='icon' href='/favicon.ico' />;
 
 export default function Document() {
   return (

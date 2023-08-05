@@ -26,6 +26,7 @@ module.exports = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#1c92ff',
+        accent2: '#4CAF50',
       },
       spacing: {
         13: '3.25rem',
