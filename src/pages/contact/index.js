@@ -27,7 +27,6 @@ const Contact = () => {
             animate='show'
             exit='hidden'
           >
-            Contact Form
             {/* Group */}
             <div className='flex gap-x-6'>
               <input type='text' placeholder='name' className='input' />
