@@ -99,6 +99,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwind-scrollbar-hide'),
     require('tailwind-scrollbar'),
     plugin(({ theme, addUtilities }) => {
       const neonUtilities = {};

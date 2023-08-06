@@ -16,7 +16,7 @@ const sora = Sora({
 export default function RootLayout({ children }) {
   return (
     <div
-      className={`page relative bg-site bg-cover bg-no-repeat text-slate-300 ${sora.variable} font-sora`}
+      className={`page relative bg-site bg-cover bg-no-repeat text-slate-300 ${sora.variable} font-sora scrollbar-hide`}
     >
       <Head>
         <title>Digitl Alchemyst Steven Watkins</title>
@@ -48,7 +48,9 @@ export default function RootLayout({ children }) {
       <TopLeftImg />
       <Nav />
       <Header />
+      <div className='bg-site bg-cover'>
       {children}
+      </div>
     </div>
   );
 }
