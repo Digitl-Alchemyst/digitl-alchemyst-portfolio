@@ -7,17 +7,17 @@ import { easeInOut, motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
 const Home = () => {
   return (
-    <div className='h-full bg-primary/60'>
+    <div className='h-full bg-primary/60 pt-62'>
       {/* Text */}
       <div className='h-full w-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
-        <div className='container mx-auto  flex h-full flex-col justify-center text-center xl:pt-10 xl:text-left'>
+        <div className='container mx-auto  flex h-full flex-col justify-center text-center xl:pt-10 xl:text-left '>
           {/* Title */}
           <motion.h1
             variants={fadeIn('down', 0.3)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1'
+            className='h1 z-40'
           >
             <span className='text-accent'> Digitl Alchemyst</span>{' '}
             <span className='text-3xl'>Steven Watkins</span>
@@ -27,7 +27,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h2'
+            className='h2 z-40'
           >
             Transforming Ideas Into{' '}
             <span className='text-accent'> Digital Reality</span>{' '}
@@ -37,7 +37,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='xl:max-w-xl lg:max-w-lg mx-auto mb-10 max-w-xl text-sm xl:mx-0 bg-slate-700/80 text-sky-300 p-3 rounded-lg z-40'
+            className='z-40 mx-auto mb-10 max-w-xl rounded-lg bg-slate-700/80 p-3 text-sm text-sky-300 lg:max-w-lg xl:mx-0 xl:max-w-xl'
           >
             An accomplished and versatile technology entrepreneur and artist, I
             have honed my skills through self-guided exploration and hands-on
