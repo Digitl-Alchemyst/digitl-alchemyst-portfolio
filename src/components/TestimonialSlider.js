@@ -45,10 +45,10 @@ const TestimonialSlider = () => {
       {testimonialData.map((name, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='flex h-full flex-col items-center gap-x-8 md:flex-row'>
+            <div className='flex h-full flex-col items-center gap-x-8 md:flex-row '>
               {/* Reviewer Info */}
-              <div className='relative mx-auto flex w-full max-w-[300px] flex-col items-center xl:mx-0 xl:justify-center'>
-                <div className='flex flex-col justify-center text-center'>
+              <div className='relative mx-auto flex w-full max-w-[300px] flex-col items-center xl:mx-0 xl:justify-center '>
+                <div className='flex flex-col justify-center text-center '>
                   {/* Avatar */}
                   <div className='mx-autp mb-2'>
                     <Image src={name.image} alt='' width={100} height={100} />
@@ -69,7 +69,7 @@ const TestimonialSlider = () => {
                   <FaQuoteLeft className='text-4-xl mx-auto text-white/20 md:mx-0 xl:text-6xl' />
                 </div>
                 {/* Message  */}
-                <div className='text-center md:text-left xl:text-lg'>
+                <div className='text-center md:text-left md:pr-10 lg:pr-8 xl:pr-6 xl:text-lg'>
                   {name.message}
                 </div>
                 {/* Quotes "" */}
