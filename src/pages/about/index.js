@@ -95,7 +95,8 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className='h-full bg-slate-700/30 pb-40 pt-60 text-center xl:text-left'>
+    <div className='h-[100vh] bg-slate-700/30  pt-60 text-center xl:text-left'>
+      {/* Page Theme Elements  */}
       <Circles />
       {/* Avatar  */}
       <motion.div
@@ -103,13 +104,17 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='absolute bottom-0 hidden h-full max-h-[747px] w-full max-w-[637px] xl:flex'
+        className='absolute bottom-0 hidden h-full max-h-[547px] w-full max-w-[437px] xl:flex xxl:max-h-[547px] xxl:max-w-[437px]'
       >
         <Avatar />
       </motion.div>
+
+      {/* Page Content  */}
+      {/* Purple  */}
       <div className='container mx-auto flex h-full flex-col items-center gap-x-6 xl:flex-row'>
         {/* Text */}
-        <div className='mb-8 flex-1 flex-col justify-center xl:mb-0'>
+        {/* Blue */}
+        <div className='mb-8 flex-1 flex-col justify-center xl:mb-0 xxl:ml-80'>
           <motion.h2
             variants={fadeIn('right', 0.3)}
             initial='hidden'
@@ -127,8 +132,9 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='mx-auto mb-6 max-w-[500px] px-2 xl:mx-0 xl:mb-12 xl:px-0'
+            className='xxl:max-w-[900px] px-2 mx-auto mb-6 max-w-[500px] xl:mx-0 xl:mb-12 xl:max-w-[700px] xl:px-0'
           >
+            {/* Red  */}
             Throughout my life, I&apos;ve been drawn to the world of technology,
             and it was in web application development that I found my true
             passion. Starting with humble experiments in HTML and CSS, I
@@ -150,21 +156,23 @@ const About = () => {
             to face new challenges and create impactful solutions that push the
             boundaries of web application development.
           </motion.p>
+
+          {/* Counters  */}
           {/* Counters  */}
           <motion.div
             variants={fadeIn('right', 0.6)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='md:max-2-xl mx-auto xl:mx-0 xl:max-w-none'
+            className='mx-auto md:max-w-2xl xl:mx-0 xl:max-w-4xl'
           >
-            <div className='flex xl:gap-x-4 '>
+            <div className='flex gap-x-2 xl:gap-x-3 '>
               {/* Years of Experience  */}
               <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
                 <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
                   <CountUp start={0} end={3} duration={5} /> +
                 </div>
-                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                <div className='max-w-[100px] text-xs md:text-sm capitalize leading-[1.4] tracking-[1px] mr-2'>
                   Years of experience
                 </div>
               </div>
@@ -173,7 +181,7 @@ const About = () => {
                 <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
                   <CountUp start={0} end={84} duration={5} /> +
                 </div>
-                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                <div className='max-w-[100px] text-xs md:text-sm capitalize leading-[1.4] tracking-[1px] mr-2'>
                   Satisfied Clients
                 </div>
               </div>
@@ -182,7 +190,7 @@ const About = () => {
                 <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
                   <CountUp start={0} end={132} duration={5} /> +
                 </div>
-                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                <div className='max-w-[100px] text-xs md:text-sm capitalize leading-[1.4] tracking-[1px] mr-2'>
                   Projects Completed
                 </div>
               </div>
@@ -191,20 +199,22 @@ const About = () => {
                 <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
                   <CountUp start={0} end={64} duration={5} /> +
                 </div>
-                <div className='max-w-[100px] text-sm capitalize leading-[1.4] tracking-[1px]'>
+                <div className='max-w-[100px] text-xs md:text-sm capitalize leading-[1.4] tracking-[1px] mr-2'>
                   Open Source Contributions
                 </div>
               </div>
             </div>
           </motion.div>
         </div>
+
+        {/* Blue  */}
         {/* Info  */}
         <motion.div
           variants={fadeIn('left', 0.4)}
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='flex h-[480px] w-full flex-col xl:max-w-[48%]'
+          className='flex h-[480px] w-full flex-col xl:max-w-[48%] xxl:max-w-[38%] pb-32 xl:pb-0'
         >
           <div className='mx-auto mb-4 flex gap-x-4 xl:mx-0 xl:gap-x-8'>
             {aboutData.map((item, itemIndex) => {

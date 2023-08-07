@@ -7,10 +7,10 @@ import { easeInOut, motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
 const Home = () => {
   return (
-    <div className='mb-50 h-[100vh] bg-gradient-to-r from-primary/10 via-black/30 to-black/10 md:pb-82 lg:pb-0 pt-50 sm:pt-98 md:pt-120 lg:pt-36 xl:pt-24 xxl:pt-8'>
+    <div className='mb-50 h-[100vh] bg-gradient-to-r from-primary/10 via-black/30 to-black/10 pt-50 sm:pt-98 md:pb-82 md:pt-120 lg:pb-0 lg:pt-36 xl:pt-24 xxl:pt-8'>
       {/* Text */}
       <div className='h-full w-full'>
-        <div className='container mx-auto  flex h-full flex-col justify-center text-center xl:pt-10 xl:text-left pb-10'>
+        <div className='container mx-auto  flex h-full flex-col justify-center pb-10 text-center xl:pt-10 xl:text-left'>
           {/* Title */}
           <motion.h1
             variants={fadeIn('down', 0.3)}
@@ -57,7 +57,7 @@ const Home = () => {
           </motion.p>
           {/* Button */}
           <div className='relative flex justify-center xl:hidden'>
-            <ProjectsBtn className='pb-20'/>
+            <ProjectsBtn className='pb-20' />
           </div>
           <motion.div
             variants={fadeIn('down', 0.5)}
