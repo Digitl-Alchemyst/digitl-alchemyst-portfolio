@@ -11,7 +11,7 @@ const Work = () => {
       <div className='container mx-auto '>
         <div className='flex flex-col gap-x-8 xl:flex-row '>
           {/* Text  */}
-          <div className='mb-4 flex flex-col text-center lg:text-left xl:mb-0 xl:min-w-fit'>
+          <div className='mb-4 flex flex-col text-center lg:text-left xl:mb-0 xl:min-w-fit xl:max-w-[400px]'>
             <motion.h2
               variants={fadeIn('up', 0.2)}
               initial='hidden'

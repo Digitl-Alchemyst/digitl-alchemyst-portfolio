@@ -95,7 +95,7 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className='h-[100vh] bg-slate-700/30  pt-60 text-center xl:text-left'>
+    <div className='h-[100vh] bg-slate-700/30  pt-40 md:pt-36 lg:pt-24 text-center xl:text-left'>
       {/* Page Theme Elements  */}
       <Circles />
       {/* Avatar  */}

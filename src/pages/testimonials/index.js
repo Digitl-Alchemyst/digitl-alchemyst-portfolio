@@ -21,6 +21,7 @@ const Testimonials = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
+          className='xl:pr-22'
         >
           <TestimonialSlider />
         </motion.div>
