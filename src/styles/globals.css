@@ -26,6 +26,7 @@
     @apply bg-secondary bg-gradient-to-r from-primary/10 via-black/30 to-black/10 leading-relaxed;
   }
   .page {
+    /* min-h-screen */
     @apply w-full h-screen overflow-scroll xl:overflow-hidden  ;
   }
   .h1 {

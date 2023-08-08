@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
+const { fontFamily } = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: [
-    // Or if using `src` directory:
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -29,6 +29,10 @@ module.exports = {
         secondary: '#393A47',
         accent: '#1c92ff',
         accent2: '#4CAF50',
+        dark: '#1b1b1b',
+        light: '#f5f5f5',
+        // primary: '#B63E96', // 240,86,199
+        // primaryDark: '#58E6D9', // 80,230,217
       },
       spacing: {
         13: '3.25rem',
@@ -82,7 +86,7 @@ module.exports = {
         alchemy: 'url("/bg-alchemy.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
+        site: 'url("/hs.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
@@ -90,6 +94,7 @@ module.exports = {
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
+        mont: [`var(--font-mont)`, ...fontFamily.sans],
       },
     },
   },
