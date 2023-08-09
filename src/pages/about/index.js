@@ -233,7 +233,7 @@ const About = () => {
       <Head>
         <title>Steven Watkins | My Skills</title>
       </Head>
-      <main className='flex flex-col items-center justify-center'>
+      <main className='flex flex-col items-center justify-center xxl:pr-38 xxl:pt-50'>
         <Layout className=''>
           {/* Avatar  */}
           <motion.div
@@ -267,7 +267,7 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='mx-auto my-2 mb-10  max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-18 xl:max-w-[700px] xl:px-4 xl:text-lg xxl:max-w-[900px]'
+                className='mx-auto mb-10  max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-18 xl:max-w-[700px] xl:px-4 xl:text-lg xxl:max-w-[900px]'
               >
                 Throughout my life, I&apos;ve been drawn to the world of
                 technology, and it was in web application development that I
