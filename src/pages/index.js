@@ -7,6 +7,9 @@ import { easeInOut, motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
 import Profile from '@/components/Profile';
 import Layout from '@/c/Layout';
+import Link from 'next/link';
+import { LinkArrow } from '@/components/icons';
+
 
 const Home = () => {
   return (
@@ -54,7 +57,7 @@ const Home = () => {
               animate='show'
               exit='hidden'
               // Removed max-w-xl lg:max-w-lg xl:max-w-xl
-              className='z-40 mx-auto my-2 mb-10 rounded-lg bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:text-lg'
+              className='z-40 mx-auto my-2 mb-10 rounded-lg bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:text-lg border border-solid border-accent2/30'
             >
               An accomplished and versatile technology entrepreneur and artist,
               I have honed my skills through self-guided exploration and
@@ -75,8 +78,41 @@ const Home = () => {
             </motion.p>
 
             {/* CTA Buttons */}
-            <div className='flex gap-8'>
+            <div className='mt-2 flex items-center gap-8 self-center'>
               <motion.div
+                variants={fadeIn('down', 0.5)}
+                initial='hidden'
+                animate='show'
+                exit='hidden'
+                className='justify-centerflex'
+              >
+                <Link
+                  href='/Steven-Watkins-Dev-Resume.pdf'
+                  target='_blank'
+                  className='button'
+                  download={true}
+                >
+                  My Resume <LinkArrow className={'w-6 ml-2'} />
+                </Link>
+              </motion.div>
+
+              <motion.div
+                variants={fadeIn('down', 0.5)}
+                initial='hidden'
+                animate='show'
+                exit='hidden'
+                className='flex justify-center'
+              >
+                <Link
+                  href='mailto:digitalalchemiststudios@gmail.com'
+                  target='_blank'
+                  className='button'
+                >
+                  Let&apos;s Connect
+                </Link>
+              </motion.div>
+
+              {/* <motion.div
                 variants={fadeIn('down', 0.5)}
                 initial='hidden'
                 animate='show'
@@ -84,16 +120,7 @@ const Home = () => {
                 className='hidden justify-center xl:flex'
               >
                 <ProjectsBtn />
-              </motion.div>
-              <motion.div
-                variants={fadeIn('down', 0.5)}
-                initial='hidden'
-                animate='show'
-                exit='hidden'
-                className='hidden justify-center xl:flex'
-              >
-                <ProjectsBtn />
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
           {/* </div> */}
@@ -106,7 +133,7 @@ const Home = () => {
             exit='hidden'
             transition={{ duration: 1, ease: easeInOut }}
             // removed xl:max-w-none added w-1/2
-            className='hidden max-h-[25%] w-1/2 max-w-[25%] xl:mr-12 xl:flex absolute right-72 top-56'
+            className='absolute right-72 top-56 hidden max-h-[25%] w-1/2 max-w-[25%] xl:mr-12 xl:flex'
           >
             <Profile />
           </motion.div>
