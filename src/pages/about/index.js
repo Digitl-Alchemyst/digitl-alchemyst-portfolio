@@ -182,7 +182,8 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'Full Stack Developer / Streaming Server Engineer - UnTelevised Media',
+        title:
+          'Full Stack Developer / Streaming Server Engineer - UnTelevised Media',
         stage: '2018 - 2021',
       },
       {
@@ -267,7 +268,7 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='mx-auto mb-10  max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-18 xl:max-w-[700px] xl:px-4 xl:text-lg xxl:max-w-[900px]'
+                className='mx-auto mb-10  max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-18 xl:max-w-[700px] xl:px-4 xxl:max-w-[900px]'
               >
                 Throughout my life, I&apos;ve been drawn to the world of
                 technology, and it was in web application development that I
@@ -305,7 +306,7 @@ const About = () => {
                   {/* Years of Experience  */}
                   <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
                     <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
-                      <CountUp start={0} end={3} duration={5} /> +
+                      <CountUp start={0} end={13} duration={5} /> +
                     </div>
                     <div className='mr-2 max-w-[100px] text-xs capitalize leading-[1.4] tracking-[1px] md:text-sm'>
                       Years of experience
@@ -314,7 +315,7 @@ const About = () => {
                   {/* Satisfied Clients */}
                   <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
                     <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
-                      <CountUp start={0} end={84} duration={5} /> +
+                      <CountUp start={0} end={42} duration={5} /> +
                     </div>
                     <div className='mr-2 max-w-[100px] text-xs capitalize leading-[1.4] tracking-[1px] md:text-sm'>
                       Satisfied Clients
@@ -323,7 +324,7 @@ const About = () => {
                   {/* Completed Projects */}
                   <div className='relative flex flex-1 flex-col items-center after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-accent2'>
                     <div className='text-2xl font-extrabold text-accent xl:text-4xl'>
-                      <CountUp start={0} end={132} duration={5} /> +
+                      <CountUp start={0} end={28} duration={5} /> +
                     </div>
                     <div className='mr-2 max-w-[100px] text-xs capitalize leading-[1.4] tracking-[1px] md:text-sm'>
                       Projects Completed

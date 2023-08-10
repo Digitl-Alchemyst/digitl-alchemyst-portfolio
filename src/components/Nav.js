@@ -14,7 +14,7 @@ const navLinks = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
   { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'experience', path: '/experience', icon: <HiViewColumns /> },
   { name: 'projects', path: '/projects', icon: <HiViewColumns /> },
   {
     name: 'testimonials',
@@ -45,11 +45,13 @@ const Nav = () => {
               key={index}
             >
               {/* ToolTip */}
-              <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
-                <div className='relative flex items-center bg-white p-[6px] text-primary rounded-sm'>
-                  <div className='text-[12px] leading-none font-semibold capitalize'>{link.name}</div>
+              <div className='absolute right-0 hidden pr-14 xl:group-hover:flex'>
+                <div className='relative flex items-center rounded-sm bg-white p-[6px] text-primary'>
+                  <div className='text-[12px] font-semibold capitalize leading-none'>
+                    {link.name}
+                  </div>
                   {/* Triangle */}
-                  <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2' />
+                  <div className='absolute -right-2 border-y-[6px] border-l-8 border-r-0 border-solid border-y-transparent border-l-white' />
                 </div>
               </div>
               {/* Icons  */}

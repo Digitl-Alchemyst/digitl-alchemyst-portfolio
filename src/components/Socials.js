@@ -9,7 +9,6 @@ import {
 } from 'react-icons/ri';
 import { easeInOut, motion } from 'framer-motion';
 
-
 const MotionLink = motion(Link);
 
 const Socials = () => {

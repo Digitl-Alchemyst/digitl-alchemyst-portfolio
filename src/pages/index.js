@@ -10,7 +10,6 @@ import Layout from '@/c/Layout';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/icons';
 
-
 const Home = () => {
   return (
     <main className='flex min-h-screen w-full items-center'>
@@ -57,7 +56,7 @@ const Home = () => {
               animate='show'
               exit='hidden'
               // Removed max-w-xl lg:max-w-lg xl:max-w-xl
-              className='z-40 mx-auto my-2 mb-10 rounded-lg bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:text-lg border border-solid border-accent2/30'
+              className='z-40 mx-auto my-2 mb-10 rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:text-lg'
             >
               An accomplished and versatile technology entrepreneur and artist,
               I have honed my skills through self-guided exploration and
@@ -92,7 +91,7 @@ const Home = () => {
                   className='button'
                   download={true}
                 >
-                  My Resume <LinkArrow className={'w-6 ml-2'} />
+                  My Resume <LinkArrow className='ml-2 w-6' />
                 </Link>
               </motion.div>
 
