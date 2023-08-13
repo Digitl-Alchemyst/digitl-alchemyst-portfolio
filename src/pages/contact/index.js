@@ -64,7 +64,7 @@ const Contact = () => {
               >
                 Let&apos;s <span className='text-accent'>connect</span>
               </motion.h1>
-              <div className='flex flex-col xl:flex-row xl:gap-x-16'>
+              <div className='flex flex-col xl:flex-row xl:gap-x-16 items-center'>
                 {/* Info & Buttons */}
                 <motion.div
                   className='mx-auto mb-6 flex w-full flex-1 flex-col items-start gap-y-4 xl:mb-0 xl:mr-4'
