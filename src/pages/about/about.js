@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import Avatar from '@/c/Avatar';
-import Circles from '@/components/Circles';
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
@@ -97,7 +97,7 @@ const About = () => {
   return (
     <div className='h-[100vh] bg-slate-700/30  pt-40 text-center md:pt-36 lg:pt-24 xl:text-left'>
       {/* Page Theme Elements  */}
-      <Circles />
+
       {/* Avatar  */}
       <motion.div
         variants={fadeIn('right', 0.2)}

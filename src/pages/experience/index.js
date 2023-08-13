@@ -1,6 +1,5 @@
 import WorkSlider from '@/c/WorkSlider';
 import Bulb from '@/c/Bulb';
-import Circles from '@/c/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
 import WorkExperience from '@/c/Experience';

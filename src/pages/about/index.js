@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import Avatar from '@/c/Avatar';
-import Circles from '@/components/Circles';
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '#/variants';

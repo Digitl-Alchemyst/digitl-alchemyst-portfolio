@@ -8,7 +8,7 @@ import { fadeIn } from '#/variants';
 import Profile from '@/components/Profile';
 import Layout from '@/c/Layout';
 import Link from 'next/link';
-import { LinkArrow } from '@/components/icons';
+import { LinkArrow } from '@/components/Icons';
 
 const Home = () => {
   return (
