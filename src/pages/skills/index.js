@@ -16,7 +16,6 @@ import {
   FaWindows,
   FaFedora,
 } from 'react-icons/fa';
-
 import {
   SiNextdotjs,
   SiFramer,
@@ -63,6 +62,7 @@ import Layout from '@/c/Layout';
 import { RiBlenderLine } from 'react-icons/ri';
 import { GrAndroid, GrArchlinux } from 'react-icons/gr';
 import { AiOutlineCloud, AiOutlineSketch } from 'react-icons/ai';
+
 //  data
 const aboutData = [
   {
@@ -349,9 +349,9 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='flex h-[480px] w-full flex-col pb-32 xl:max-w-[48%] xl:pb-0 xxl:max-w-[38%]'
+              className='flex h-[480px] w-full flex-col pb-32 xl:max-w-[48%] xl:pb-0'
             >
-              <div className='mx-auto mb-4 flex gap-x-4 xl:mx-0 xl:gap-x-8'>
+              <div className='mx-auto mb-4 gap-y-4 flex-wrap flex gap-x-4 xl:mx-0 xl:gap-x-8'>
                 {aboutData.map((item, itemIndex) => {
                   return (
                     <div
@@ -367,12 +367,12 @@ const About = () => {
                   );
                 })}
               </div>
-              <div className='gap-y2 flex flex-col items-center rounded-xl border border-sky-400/20 bg-lime-400/20 py-2 xl:items-start xl:gap-y-4 xl:px-2 xl:py-6'>
+              <div className='gap-y2 flex flex-col items-center rounded-xl border border-sky-400/20 bg-lime-400/20 py-2 xl:mr-16 xl:items-start xl:gap-y-4 xl:px-2 xl:py-6'>
                 {aboutData[index].info.map((item, itemIndex) => {
                   return (
                     <div
                       key={itemIndex}
-                      className='flex max-w-max flex-1 flex-col items-center gap-x-2 text-accent2 md:flex-row'
+                      className='flex max-w-max flex-1 flex-col items-center gap-x-2 px-2 text-accent2 md:flex-row'
                     >
                       {/* Title  */}
                       <div className='mb-2 font-light md:mb-1'>
@@ -380,7 +380,7 @@ const About = () => {
                       </div>
                       <div className='hidden md:flex'>-</div>
                       <div className='mb-2 md:mb-1'>{item.stage}</div>
-                      <div className='flex gap-x-4'>
+                      <div className='flex flex-wrap gap-x-4'>
                         {/* Icons */}
                         {item.icons?.map((icon, itemIndex) => {
                           return (

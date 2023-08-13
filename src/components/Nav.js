@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 //  Navigation Menu Links
 const navLinks = [
   { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
+  { name: 'skills', path: '/skills', icon: <HiUser /> },
   { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
   { name: 'experience', path: '/experience', icon: <HiViewColumns /> },
   { name: 'projects', path: '/projects', icon: <HiViewColumns /> },
