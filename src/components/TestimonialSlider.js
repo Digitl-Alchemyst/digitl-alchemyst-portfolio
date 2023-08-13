@@ -45,9 +45,9 @@ const TestimonialSlider = () => {
       {testimonialData.map((name, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='flex h-full flex-col items-center gap-x-8 md:flex-row '>
+            <div className='flex h-full flex-col items-center gap-x-8 md:flex-row'>
               {/* Reviewer Info */}
-              <div className='relative mx-auto flex w-full max-w-[300px] flex-col items-center xl:mx-0 xl:justify-center '>
+              <div className='relative mx-auto flex w-full max-w-[350px] flex-col items-center xl:mx-0 xl:justify-center '>
                 <div className='flex flex-col justify-center text-center '>
                   {/* Avatar */}
                   <div className='mx-auto mb-2'>
@@ -63,13 +63,13 @@ const TestimonialSlider = () => {
               </div>
               {/* Quote */}
 
-              <div className='relative flex flex-1 flex-col justify-center before:w-[1px] xl:pl-20  xl:before:absolute xl:before:left-0 xl:before:h-[200px] xl:before:bg-white/20'>
+              <div className='relative flex flex-1 flex-col justify-center before:w-[1px] xl:pl-10  xl:before:absolute xl:before:left-0 xl:before:h-[200px] xl:before:bg-white/20'>
                 {/* Quotes "" */}
                 <div className='mb-4'>
                   <FaQuoteLeft className='text-4-xl mx-auto text-white/20 md:mx-0 xl:text-6xl' />
                 </div>
                 {/* Message  */}
-                <div className='text-center md:pr-10 md:text-left lg:pr-8 xl:pr-6 xl:text-lg'>
+                <div className='text-center md:pr-14 md:text-left lg:pr-12 xl:pr-10 xl:text-lg text-sm sm:text-base'>
                   {name.message}
                 </div>
                 {/* Quotes "" */}
