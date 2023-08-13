@@ -24,7 +24,7 @@ const Edu = ({ type, time, location, info }) => {
         <span className='text-lg'>
           {time} | <span className='text-base text-accent2'>{location}</span>
         </span>
-        <div className='ml-2 w-full text-sm font-medium'>{infoItem}</div>
+        <div className='ml-2 w-full text-xs md:text-sm font-medium'>{infoItem}</div>
       </motion.div>
     </li>
   );

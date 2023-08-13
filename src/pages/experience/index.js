@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <>
       <Head>
-        <title>Steven Watkins | My Skills</title>
+        <title>Experience & Education</title>
       </Head>
       <ParticlesContainer />
       <main className='flex min-h-screen w-full items-center'>
@@ -26,7 +26,7 @@ const Experience = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='h2 xl:mt-12'
+                className='h2 xl:pt-12 pt-22 pb-8'
               >
                 My Education & Work Experience{' '}
                 <span className='text-accent'>.</span>

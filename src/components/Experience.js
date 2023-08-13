@@ -10,12 +10,15 @@ const WorkExp = ({ position, company, companyLink, time, location, duty }) => {
     </p>
   ));
   return (
-      <li ref={ref} className='items-left mx-auto my-8 flex w-[60%] flex-col justify-between first:mt-0 last:mb-0 items-start'>
-        <LiIcon reference={ref}/>
+    <li
+      ref={ref}
+      className='items-left mx-auto my-8 flex w-[60%] flex-col items-start justify-between first:mt-0 last:mb-0'
+    >
+      <LiIcon reference={ref} />
       <motion.div
-      initial={{y:75}}
-      whileInView={{y:0}}
-      transition={{duration:0.75, type:'spring'}}
+        initial={{ y: 75 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.75, type: 'spring' }}
       >
         <h4 className='text-2xl font-bold capitalize'>
           {position}&nbsp;{' '}
@@ -28,7 +31,9 @@ const WorkExp = ({ position, company, companyLink, time, location, duty }) => {
         <span className='text-lg'>
           {time} | <span className='text-base text-accent2'>{location}</span>
         </span>
-        <div className='ml-2 w-full text-sm font-medium'>{dutyItems}</div>
+        <div className='ml-2 w-full text-xs font-medium md:text-sm'>
+          {dutyItems}
+        </div>
       </motion.div>
     </li>
   );
@@ -41,7 +46,7 @@ const WorkExperience = () => {
     offset: ['start end', 'center start'],
   });
   return (
-    <div className='my-64'>
+    <div className=''>
       <h2 className='mb-32 w-full text-center text-6xl font-bold'>
         Experience
       </h2>
