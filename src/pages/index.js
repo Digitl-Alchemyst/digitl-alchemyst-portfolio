@@ -12,11 +12,11 @@ import { LinkArrow } from '@/components/icons';
 
 const Home = () => {
   return (
-    <main className='flex min-h-screen w-full items-center'>
+    <main className='flex min-h-screen max-h-screen w-full items-center'>
       {/* BG Image Layers */}
 
-      <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' />
-      <div className='translate-z-0 absolute h-full w-full animate-pulse bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-right xl:bg-no-repeat' />
+      {/* <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' /> */}
+      <div className='translate-z-0 absolute h-full w-full animate-pulse bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-bottom  xl:bg-no-repeat' />
 
       {/* Particles  */}
       <ParticlesContainer />

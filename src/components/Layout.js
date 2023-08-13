@@ -7,7 +7,7 @@ export default function RootLayout({ children, className = '' }) {
     <>
       {/* <TopLeftImg /> */}
 
-      <div className={`z-0 inline-block h-full w-full p-32  ${className}`}>
+      <div className={`z-0 inline-block h-full w-full pt-32 px-16 pb-52  ${className}`}>
         {children}
       </div>
     </>

@@ -61,10 +61,10 @@ const App = ({ Component, pageProps }) => {
         />
       </Head>
 
-      {/* <Layout> */}
+
       <main className={`${montserrat.variable} page font-mont `}>
         <AnimatePresence mode='wait'>
-          <motion.div key={router.route} className='h-full '>
+          <motion.div key={router.route} className=' '>
             <Transition />
             <Nav />
             <Header />
@@ -72,7 +72,7 @@ const App = ({ Component, pageProps }) => {
           </motion.div>
         </AnimatePresence>
       </main>
-      {/* </Layout> */}
+
     </>
   );
 };
