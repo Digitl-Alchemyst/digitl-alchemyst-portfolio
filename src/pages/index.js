@@ -1,18 +1,15 @@
 /* eslint-disable react/function-component-definition */
-import Image from 'next/image';
 import ParticlesContainer from '@/c/ParticlesContainer';
-import ProjectsBtn from '@/c/ProjectsBtn';
-import Avatar from '@/c/Avatar';
 import { easeInOut, motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
-import Profile from '@/components/Profile';
+import Profile from '@/c/Profile';
 import Layout from '@/c/Layout';
 import Link from 'next/link';
-import { LinkArrow } from '@/components/Icons';
+import { LinkArrow } from '@/c/Icons';
 
 const Home = () => {
   return (
-    <main className='flex min-h-screen max-h-screen w-full items-center'>
+    <main className='flex max-h-screen min-h-screen w-full items-center'>
       {/* BG Image Layers */}
 
       {/* <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' /> */}
@@ -21,12 +18,12 @@ const Home = () => {
       {/* Particles  */}
       <ParticlesContainer />
 
-      <Layout className='pt-0'>
+      <Layout className='pt-0 md:pt-60 lg:pt-30 xl:pt-20'>
         <div className='flex w-full items-center justify-between'>
           {/* <div className='h-full w-full'> */}
 
           {/* Removed self-center */}
-          <div className='flex w-1/2 flex-col items-center xl:pt-36'>
+          <div className='flex w-auto flex-col items-center xl:w-1/2 xl:pt-36'>
             {/* Title */}
             <motion.h1
               variants={fadeIn('down', 0.3)}
@@ -88,10 +85,11 @@ const Home = () => {
                 <Link
                   href='/Steven-Watkins-Dev-Resume.pdf'
                   target='_blank'
-                  className='button'
+                  className='button text-xs sm:text-lg py-4 sm:py-3'
                   download={true}
                 >
-                  My Resume <LinkArrow className='ml-2 w-6' />
+                  My Resume 
+                  <LinkArrow className='ml-2 w-4 sm:w-6' />
                 </Link>
               </motion.div>
 
@@ -105,7 +103,7 @@ const Home = () => {
                 <Link
                   href='mailto:digitalalchemiststudios@gmail.com'
                   target='_blank'
-                  className='button'
+                  className='button text-xs sm:text-lg py-4 sm:py-3'
                 >
                   Let&apos;s Connect
                 </Link>
