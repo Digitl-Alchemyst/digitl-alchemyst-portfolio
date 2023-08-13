@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 'use client';
 
 import {
@@ -15,26 +16,30 @@ import { TbBrandLinktree } from 'react-icons/tb';
 import Link from 'next/link';
 import Layout from '@/c/Layout';
 import React, { useRef } from 'react';
-import emailjs, { sendForm } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     console.log('Button Click Confirmed');
 
-    emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
-      .then((result) =>{
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        },
+      );
 
     e.target.reset();
   };
@@ -75,7 +80,7 @@ const Contact = () => {
                   <TbBrandLinktree className='h-8 w-8 text-accent' />
                   <Link
                     href='https://www.flowcode.com/page/digitalalchemyst'
-                    className='font-semibold underline'
+                    className='font-semibold underline hover:text-accent'
                   >
                     <span className='text-accent2'>Visit my Link Tree</span> for
                     a full scope of my projects
@@ -84,21 +89,57 @@ const Contact = () => {
                 <div className='flex items-center space-x-4'>
                   <ImEnvelop className='h-8 w-8 text-accent' />
                   <div className='flex flex-col items-start'>
-                    <p>StevenRWatkins86@gmail.com</p>
-                    <p>DigialAlchemistStudios@gmail.com</p>
+                    <Link
+                      href='mailto:digitalalchemiststudios@gmail.com'
+                      target='_blank'
+                      className='cursor-pointer hover:text-accent2'
+                    >
+                      StevenRWatkins86@gmail.com
+                    </Link>
+                    <Link
+                      href='mailto:digitalalchemiststudios@gmail.com'
+                      target='_blank'
+                      className='cursor-pointer hover:text-accent2'
+                    >
+                      DigialAlchemistStudios@gmail.com
+                    </Link>
                   </div>
                 </div>
                 <div className='flex items-center space-x-4'>
                   <BsTelephoneFill className='h-8 w-8 text-accent' />
                   <div className='flex flex-col'>
-                    <p>+1 (720) 451-3767</p>
-                    <p>+1 (720) 930-3876</p>
+                    <Link
+                      href='tel:7204513767'
+                      target='_blank'
+                      className='cursor-pointer hover:text-accent2'
+                    >
+                      +1 (720) 451-3767
+                    </Link>
+                    <Link
+                      href='tel:7209303876'
+                      target='_blank'
+                      className='cursor-pointer hover:text-accent2'
+                    >
+                      +1 (720) 930-3876
+                    </Link>
                   </div>
                 </div>
                 <div className='mb-4 flex items-center gap-x-6 text-lg'>
-                  <BsFillChatLeftTextFill className='h-7 w-7 text-accent' />
-                  <BsSignal className='h-7 w-7 text-accent' />
-                  <BsWhatsapp className='h-7 w-7 text-accent' />
+                  <Link href='sms:7204513767'>
+                    <BsFillChatLeftTextFill className='h-7 w-7 cursor-pointer text-accent hover:text-accent2' />
+                  </Link>
+                  <Link
+                    href='https://signal.group/#CjQKIFmG5VRvMOLW8RsrO9Fo5C9nrJCfxV9TMKkW9qaexiVxEhBgwsiG6RorUJenFSjbISHI'
+                    target='_blank'
+                  >
+                    <BsSignal className='h-7 w-7 cursor-pointer text-accent hover:text-accent2' />
+                  </Link>
+                  <Link
+                    href='https://wa.me/7204513767?text=Hello'
+                    target='_blank'
+                  >
+                    <BsWhatsapp className='h-7 w-7 cursor-pointer text-accent hover:text-accent2' />
+                  </Link>
                 </div>
 
                 <Socials />
@@ -135,7 +176,11 @@ const Contact = () => {
                   placeholder='subject'
                   className='input'
                 />
-                <textarea name='message' placeholder='message' className='textarea' />
+                <textarea
+                  name='message'
+                  placeholder='message'
+                  className='textarea'
+                />
                 <button
                   type='submit'
                   value='Send'
