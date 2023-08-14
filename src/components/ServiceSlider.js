@@ -11,33 +11,51 @@ import { FreeMode, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 // data
 export const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    path: '/branding',
+    description:
+      'Crafting distintive and unique brand identities tailored to your company or project that will captivate consumers.',
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Application Development',
+    path: '/dev',
+    description:
+      'From idea to reality, I can bring your digital projects to life with efficient and innovative development solutions.',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Graphical Design',
+    path: '/design',
+    description:
+      'Experience the transformation of your creative visions into captivating visuals that leave a long lasting impact.',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Video Editing',
+    path: '/editing',
+    description:
+      'Elevate your content with expertly edited videos, where your imaginative ideas evolve into captivating visual stories.',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    path: '/copywriting',
+    description:
+      'Crafting compelling narratives and persuasive content that captures attention and drives engagement for any project.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    path: '/seo',
+    description:
+      'Elevate your online presence and visibility through strategic SEO techniques that enhance your digital reach.',
   },
 ];
 
@@ -59,18 +77,19 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className='h-[240px] sm:h-[340px]'
+      className='max-h-[450px] sm:h-[420px] xl:w-[800px] h-full flex items-center justify-center'
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='group flex h-max cursor-pointer gap-x-6 rounded-lg bg-[rgba(65,47,123,0.15)] px-6 py-8 transition-all duration-300 hover:bg-[rgba(89,65,169,0.15)] sm:flex-col sm:gap-x-0'>
+            <Link href={item.path}>
+            <div className='group flex h-max w-full cursor-pointer gap-x-6 rounded-lg bg-[rgba(65,47,123,0.15)] px-6 py-8 transition-all duration-300 hover:bg-[rgba(89,65,169,0.15)] sm:flex-col sm:gap-x-0'>
               {/* Icon */}
               <div className='mb-4 text-4xl text-accent'>{item.icon}</div>
               {/* Title & Description */}
               <div className='mb-8'>
                 <div className='mb-2 text-lg'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal'>
+                <p className='max-w-[350px] leading-normal min-h-max text-xs md:text-base lg:text-large'>
                   {item.description}
                 </p>
               </div>
@@ -79,6 +98,7 @@ const ServiceSlider = () => {
                 <RxArrowTopRight className='transition-all duration-300 group-hover:rotate-45 group-hover:text-accent2' />
               </div>
             </div>
+            </Link>
           </SwiperSlide>
         );
       })}
