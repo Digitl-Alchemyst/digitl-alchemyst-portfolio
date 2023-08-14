@@ -6,9 +6,9 @@ import { fadeIn } from '#/variants';
 
 const Services = () => {
   return (
-    <div className='flex h-[100vh] w-full items-center justify-center bg-primary/30'>
-      <Layout className='container mt-26 flex justify-center px-6 xl:px-0'>
-        <div className='flex w-full flex-col items-center gap-x-8 xl:flex-row'>
+    <main className='flex h-[100vh] w-full items-center justify-center bg-primary/30'>
+      <Layout className='ml:8 container mt-26 flex justify-center px-6 xl:px-0'>
+        <div className='flex w-full flex-col items-center gap-x-8 xl:flex-row '>
           {/* Text  */}
           <div className='mb-4 flex w-full flex-col text-center lg:text-left xl:mb-0'>
             <motion.h2
@@ -27,7 +27,7 @@ const Services = () => {
               exit='hidden'
               className='mx-auto mb-10 py-5 text-xs md:text-sm lg:mx-0 xl:mx-0 xl:text-lg'
             >
-              I am a versatile freelance developer, committed to providing a
+              TESTING I am a versatile freelance developer, committed to providing a
               diverse array of services aimed at turning your visionary concepts
               into tangible realities. With a keen artistic eye and a dedication
               to craftsmanship, I stand ready to breathe life into your
@@ -49,7 +49,7 @@ const Services = () => {
       </Layout>
 
       <Bulb />
-    </div>
+    </main>
   );
 };
 
