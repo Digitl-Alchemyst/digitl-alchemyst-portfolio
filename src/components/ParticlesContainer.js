@@ -12,7 +12,7 @@ const ParticlesContainer = () => {
 
   return (
     <Particles
-      className='translate-z-0 fixed h-full w-full'
+      className='translate-z-0 fixed h-screen w-full'
       id='tsparticles'
       init={particlesInit}
       loaded={particlesLoaded}

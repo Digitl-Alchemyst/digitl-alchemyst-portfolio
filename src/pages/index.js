@@ -9,7 +9,7 @@ import { LinkArrow } from '@/c/Icons';
 
 const Home = () => {
   return (
-    <main className='flex max-h-screen min-h-screen w-full items-center'>
+    <main className='flex h-[100vh] max-h-screen w-full items-center bg-primary/30'>
       {/* BG Image Layers */}
 
       {/* <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' /> */}
@@ -18,7 +18,7 @@ const Home = () => {
       {/* Particles  */}
       <ParticlesContainer />
 
-      <Layout className='pt-0 md:pt-60 lg:pt-30 xl:pt-20'>
+      <Layout className='pt-0 md:pt-60 lg:pt-30 xl:pt-20 max-h-screen'>
         <div className='flex w-full items-center justify-between'>
           {/* <div className='h-full w-full'> */}
 
@@ -85,10 +85,10 @@ const Home = () => {
                 <Link
                   href='/Steven-Watkins-Dev-Resume.pdf'
                   target='_blank'
-                  className='button text-xs sm:text-lg py-4 sm:py-3'
+                  className='button py-4 text-xs sm:py-3 sm:text-lg'
                   download={true}
                 >
-                  My Resume 
+                  My Resume
                   <LinkArrow className='ml-2 w-4 sm:w-6' />
                 </Link>
               </motion.div>
@@ -103,7 +103,7 @@ const Home = () => {
                 <Link
                   href='mailto:digitalalchemiststudios@gmail.com'
                   target='_blank'
-                  className='button text-xs sm:text-lg py-4 sm:py-3'
+                  className='button py-4 text-xs sm:py-3 sm:text-lg'
                 >
                   Let&apos;s Connect
                 </Link>
@@ -130,7 +130,7 @@ const Home = () => {
             exit='hidden'
             transition={{ duration: 1, ease: easeInOut }}
             // removed xl:max-w-none added w-1/2
-            className='absolute right-72 top-56 hidden max-h-[25%] w-1/2 max-w-[25%] xl:mr-12 xl:flex'
+            className='absolute right-72 items-center hidden max-h-[25%] w-1/2 max-w-[25%] xl:mr-12 xl:flex'
           >
             <Profile />
           </motion.div>

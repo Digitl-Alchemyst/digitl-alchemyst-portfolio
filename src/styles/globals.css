@@ -23,11 +23,11 @@
 
 @layer base {
   body {
-    @apply bg-secondary bg-gradient-to-r from-primary/10 via-black/30 to-black/10 leading-relaxed;
+    @apply bg-secondary bg-gradient-to-r from-primary/10 via-black/30 to-black/10 leading-relaxed scrollbar-hide;
   }
   .page {
     /* min-h-screen NEW h-screen OLD */
-    @apply min-h-screen w-full overflow-scroll bg-site bg-cover bg-no-repeat text-slate-300 scrollbar-hide xl:overflow-hidden;
+    @apply min-h-screen w-full overflow-scroll bg-site bg-cover bg-no-repeat text-slate-300 scrollbar-hide ;
   }
   .h1 {
     @apply mb-8 text-[35px] font-bold leading-tight md:text-[60px] md:leading-[1.3];
