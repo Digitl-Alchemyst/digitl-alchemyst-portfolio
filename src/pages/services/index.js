@@ -16,7 +16,7 @@ const Services = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2 xl:mt-8'
+              className='h2'
             >
               My Services <span className='text-accent'>.</span>
             </motion.h2>
@@ -27,11 +27,12 @@ const Services = () => {
               exit='hidden'
               className='mx-auto mb-10 py-5 text-xs md:text-sm lg:mx-0 xl:mx-0 xl:text-lg'
             >
-              I am a versatile freelance developer, offering a diverse range of
-              services to turn your visions into reality. As a creative expert,
-              I am here to bring your projects to life, utilizing my skills and
-              dedication to transform your creative ideas into impactful digital
-              experiences.
+              I am a versatile freelance developer, committed to providing a
+              diverse array of services aimed at turning your visionary concepts
+              into tangible realities. With a keen artistic eye and a dedication
+              to craftsmanship, I stand ready to breathe life into your
+              projects, channeling my skills to transform your imaginative
+              concepts into impactful and engaging digital experiences.
             </motion.p>
           </div>
           <motion.div
