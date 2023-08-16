@@ -1,4 +1,4 @@
-import WorkSlider from '@/c/WorkSlider';
+import WorkSlider from '@/components/ProjectsSlider';
 import Bulb from '@/c/Bulb';
 import { motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
