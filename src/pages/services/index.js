@@ -41,7 +41,7 @@ const Services = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='w-full mr-16'
+            className='w-full xl:mr-16'
           >
             {/* Slider  */}
             <ServiceSlider />

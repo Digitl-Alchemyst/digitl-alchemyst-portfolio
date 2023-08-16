@@ -8,6 +8,7 @@ import {
   BsTelephoneFill,
   BsWhatsapp,
 } from 'react-icons/bs';
+import { MdSettingsCell } from 'react-icons/md';
 import { ImEnvelop } from 'react-icons/im';
 import { motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
@@ -18,6 +19,7 @@ import Layout from '@/c/Layout';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Head from 'next/head';
+import { HiBuildingOffice2 } from 'react-icons/hi2';
 
 const Contact = () => {
   const form = useRef();
@@ -53,7 +55,7 @@ const Contact = () => {
       <main className='h-[100vh] bg-primary/30'>
         <Layout className='pt-50 xl:pt-4'>
           <div className='h-[100vh] xl:pl-8 xl:pr-24'>
-            <div className='container mx-auto flex h-full items-center justify-center py-32 text-center  xl:text-left'>
+            <div className='container mx-auto flex h-full items-center justify-center py-32 text-center md:py-8  xl:text-left'>
               <div className='flex w-full flex-col '>
                 {/* Text */}
                 <motion.h1
@@ -61,7 +63,7 @@ const Contact = () => {
                   initial='hidden'
                   animate='show'
                   exit='hidden'
-                  className='h1 mb-12 text-center'
+                  className='h1 mb-12 mt-56 text-center sm:mt-30 md:mt-2'
                 >
                   Let&apos;s <span className='text-accent'>connect</span>
                 </motion.h1>
@@ -115,20 +117,26 @@ const Contact = () => {
                     <div className='flex items-center space-x-4'>
                       <BsTelephoneFill className='h-8 w-8 text-accent' />
                       <div className='flex flex-col'>
-                        <Link
-                          href='tel:7204513767'
-                          target='_blank'
-                          className='cursor-pointer hover:text-accent2'
-                        >
-                          +1 (720) 451-3767
-                        </Link>
-                        <Link
-                          href='tel:7209303876'
-                          target='_blank'
-                          className='cursor-pointer hover:text-accent2'
-                        >
-                          +1 (720) 930-3876
-                        </Link>
+                        <div className='flex items-center gap-x-2'>
+                          <MdSettingsCell className='text-accent2' />
+                          <Link
+                            href='tel:7204513767'
+                            target='_blank'
+                            className='cursor-pointer hover:text-accent2'
+                          >
+                            +1 (720) 451-3767
+                          </Link>
+                        </div>
+                        <div className='flex items-center gap-x-2'>
+                          <HiBuildingOffice2 className='text-accent2' />
+                          <Link
+                            href='tel:7209303876'
+                            target='_blank'
+                            className='cursor-pointer hover:text-accent2'
+                          >
+                            +1 (720) 930-3876
+                          </Link>
+                        </div>
                       </div>
                     </div>
                     <div className='mb-4 flex items-center gap-x-6 text-lg'>
@@ -156,7 +164,7 @@ const Contact = () => {
                   <motion.form
                     onSubmit={sendEmail}
                     ref={form}
-                    className='mx-auto flex w-full flex-1 flex-col gap-y-4'
+                    className='mx-auto flex w-full flex-1 flex-col gap-y-4 pb-50 xl:pb-0'
                     variants={fadeIn('up', 0.4)}
                     initial='hidden'
                     animate='show'

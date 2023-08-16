@@ -234,8 +234,8 @@ const About = () => {
       <Head>
         <title>Steven Watkins | My Skills</title>
       </Head>
-      <main className='bg-primary/30 flex h-[100vh] flex-col items-center justify-center xxl:pr-38 xxl:pt-50 '>
-        <Layout className=''>
+      <main className='bg-primary/30 flex h-[100vh] flex-col items-center justify-center '>
+        <Layout className='pt-42'>
           {/* Avatar  */}
           <motion.div
             variants={fadeIn('right', 0.2)}
@@ -248,7 +248,7 @@ const About = () => {
           </motion.div>
 
           {/* Page Content  */}
-          <div className='mx-auto flex h-full w-full flex-col items-center justify-center gap-x-6 xl:flex-row '>
+          <div className='mx-auto flex h-full w-full flex-col items-center xl:justify-center gap-x-6 xl:flex-row mt-36'>
             {/* Text */}
             <div className='mb-8 flex-1 flex-col justify-center xl:mb-0 xl:ml-80 '>
               <motion.h2
@@ -349,7 +349,7 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='mb-30 flex h-[480px] w-full flex-col sm:mb-10 md:mb-0 xl:max-w-[48%] '
+              className='flex h-[480px] w-full flex-col sm:mb-10 md:mb-0 xl:max-w-[48%] '
             >
               <div className='mx-auto mb-4 flex flex-wrap gap-x-4 gap-y-4 xl:mx-0 xl:gap-x-8'>
                 {aboutData.map((item, itemIndex) => {
@@ -367,7 +367,7 @@ const About = () => {
                   );
                 })}
               </div>
-              <div className='gap-y2 flex flex-col items-center rounded-xl border border-sky-400/20 bg-lime-400/20 py-2 xl:mr-16 xl:items-start xl:gap-y-4 xl:px-2 xl:py-6 '>
+              <div className='gap-y2 flex flex-col items-center rounded-xl border border-sky-400/20 bg-lime-400/20 py-2 xl:mr-16 xl:items-start xl:gap-y-4 xl:px-2 xl:py-6'>
                 {aboutData[index].info.map((item, itemIndex) => {
                   return (
                     <div
@@ -392,6 +392,7 @@ const About = () => {
                   );
                 })}
               </div>
+            <div className='min-h-[200px] flex sm:hidden' />
             </motion.div>
           </div>
         </Layout>

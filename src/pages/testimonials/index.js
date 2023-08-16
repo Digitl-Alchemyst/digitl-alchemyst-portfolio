@@ -5,8 +5,8 @@ import Layout from '@/c/Layout'
 
 const Testimonials = () => {
   return (
-    <div className='h-[100vh] bg-primary/30 py-32 text-center'>
-      <div className=' mx-auto flex h-full flex-col justify-center'>
+    <main className='h-[100vh] bg-primary/30 py-16 text-center items-center justify-center'>
+      <div className=' mx-auto flex h-full flex-col justify-center items-center'>
         <Layout className=''>
           <motion.h2
             variants={fadeIn('up', 0.2)}
@@ -29,7 +29,7 @@ const Testimonials = () => {
           </motion.div>
         </Layout>
       </div>
-    </div>
+    </main>
   );
 };
 
