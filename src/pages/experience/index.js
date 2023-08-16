@@ -19,7 +19,7 @@ const Experience = () => {
       <main className='flex min-h-screen w-full items-center bg-primary/30'>
         <Layout className=''>
           <div className='items-left mx-auto flex h-full w-full flex-col justify-center'>
-            <div className='mb-8 flex-1 flex-col justify-center'>
+            <div className='mb-2 flex-1 flex-col justify-center'>
               <motion.h2
                 variants={fadeIn('up', 0.2)}
                 initial='hidden'

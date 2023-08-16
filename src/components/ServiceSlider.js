@@ -83,21 +83,21 @@ const ServiceSlider = () => {
         return (
           <SwiperSlide key={index}>
             <Link href={item.path}>
-            <div className='group flex h-max w-full cursor-pointer gap-x-6 rounded-lg bg-[rgba(65,47,123,0.15)] px-6 py-8 transition-all duration-300 hover:bg-[rgba(89,65,169,0.15)] sm:flex-col sm:gap-x-0'>
-              {/* Icon */}
-              <div className='mb-4 text-4xl text-accent'>{item.icon}</div>
-              {/* Title & Description */}
-              <div className='mb-8'>
-                <div className='mb-2 text-lg'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal min-h-max text-xs md:text-base lg:text-large'>
-                  {item.description}
-                </p>
+              <div className='group flex h-max w-full cursor-pointer gap-x-6 rounded-lg bg-[rgba(65,47,123,0.15)] px-6 py-8 transition-all duration-300 hover:bg-[rgba(89,65,169,0.15)] sm:flex-col sm:gap-x-0'>
+                {/* Icon */}
+                <div className='mb-4 text-4xl text-accent'>{item.icon}</div>
+                {/* Title & Description */}
+                <div className='mb-8'>
+                  <div className='mb-2 text-lg'>{item.title}</div>
+                  <p className='lg:text-large min-h-max max-w-[350px] text-xs leading-normal md:text-base'>
+                    {item.description}
+                  </p>
+                </div>
+                {/* Arrow */}
+                <div className='text-3xl'>
+                  <RxArrowTopRight className='transition-all duration-300 group-hover:rotate-45 group-hover:text-accent2' />
+                </div>
               </div>
-              {/* Arrow */}
-              <div className='text-3xl'>
-                <RxArrowTopRight className='transition-all duration-300 group-hover:rotate-45 group-hover:text-accent2' />
-              </div>
-            </div>
             </Link>
           </SwiperSlide>
         );
