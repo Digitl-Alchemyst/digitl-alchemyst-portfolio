@@ -21,8 +21,14 @@
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #1c92ff;
+  color: #4CAF50;
 }
+
+.text-stroke-black { -webkit-text-stroke-color: #1e293b }
+.text-stroke-white { -webkit-text-stroke-color: #e2e8f0 }
+.text-stroke { -webkit-text-stroke-color: #020321 }
+.text-stroke-accent { -webkit-text-stroke-color: #1c92ff }
+.text-stroke-accent2 { -webkit-text-stroke-color: #4CAF50 }
 
 
 /* html,

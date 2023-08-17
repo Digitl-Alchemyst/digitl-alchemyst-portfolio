@@ -10,13 +10,15 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    textFillColor: (theme) => theme('borderColor'),
+    textStrokeColor: (theme) => theme('borderColor'),
+    textStrokeWidth: (theme) => theme('borderWidth'),
     screens: {
       xs: '355px',
       sm: '638px',
       md: '768px',
       lg: '960px',
       xl: '1300px',
-
     },
     extend: {
       colors: {
@@ -82,7 +84,7 @@ module.exports = {
         alchemy: 'url("/bg-alchemy.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
-        site: 'url("/hs.svg")',
+        site: 'url("/sgvs/hs.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
@@ -96,6 +98,7 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
+    require('tailwindcss-text-fill-stroke'), // no options to configure
     require('tailwind-scrollbar'),
     plugin(({ theme, addUtilities }) => {
       const neonUtilities = {};
@@ -112,4 +115,4 @@ module.exports = {
       addUtilities(neonUtilities);
     }),
   ],
-}
+};
