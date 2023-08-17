@@ -27,30 +27,32 @@ export const workSlides = {
           title: 'title',
           path: '/thumb4.jpg',
         },
+        {
+          title: 'title',
+          path: '/thumb5.jpg',
+        },
+        {
+          title: 'title',
+          path: '/thumb6.jpg',
+        },
+        {
+          title: 'title',
+          path: '/thumb7.jpg',
+        },
+        {
+          title: 'title',
+          path: '/thumb8.jpg',
+        },
+        {
+          title: 'title',
+          path: '/thumb9.jpg',
+        },
       ],
     },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
+    
       ],
-    },
-  ],
-};
+    };
+
 
 const WorkSlider = () => {
   return (
@@ -60,12 +62,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className='h-[280px] sm:h-[480px] xl:h-[640px]'
+      className='flex w-[750px] items-center justify-center sm:h-[420px] lg:max-w-[750px] xl:w-[800px]'
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='grid cursor-pointer grid-cols-2 grid-rows-2 gap-4'>
+            <div className='grid cursor-pointer grid-cols-3 grid-rows-3 gap-4'>
               {slide.images.map((image, index) => {
                 return (
                   <div
