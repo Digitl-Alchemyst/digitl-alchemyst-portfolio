@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
         clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className='h-[400px]'
+      className='flex h-[400px] w-[300px] sm:w-[450px] md:w-[700px] lg:w-[850px] xl:w-[1200px] items-center justify-center sm:h-[420px] '
     >
       {testimonialData.map((name, index) => {
         return (
@@ -66,15 +66,15 @@ const TestimonialSlider = () => {
               <div className='relative flex flex-1 flex-col justify-center before:w-[1px] xl:pl-10  xl:before:absolute xl:before:left-0 xl:before:h-[200px] xl:before:bg-white/20'>
                 {/* Quotes "" */}
                 <div className='mb-4'>
-                  <FaQuoteLeft className='text-4-xl mx-auto text-white/20 md:mx-0 xl:text-6xl' />
+                  <FaQuoteLeft className='text-2-xl mx-auto text-white/20 md:mx-0 xl:text-4xl' />
                 </div>
                 {/* Message  */}
-                <div className='text-center md:pr-14 md:text-left lg:pr-12 xl:pr-10 xl:text-lg text-sm sm:text-base'>
+                <div className='text-center text-sm sm:text-base md:pr-14 md:text-left lg:pr-12 xl:pr-10'>
                   {name.message}
                 </div>
                 {/* Quotes "" */}
                 <div className='mt-4 flex justify-end'>
-                  <FaQuoteRight className='text-4-xl mx-auto text-white/20 md:mx-0 xl:text-6xl' />
+                  <FaQuoteRight className='text-2-xl mx-auto text-white/20 md:mx-0 xl:text-4xl' />
                 </div>
               </div>
             </div>
