@@ -352,7 +352,7 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='flex h-[480px] w-full flex-col sm:mb-10 md:mb-0 xl:max-w-[48%] '
+              className='flex h-[480px] w-full flex-col sm:mb-10 md:mb-0 xl:max-w-[48%]'
             >
               <div className='mx-auto mb-6 flex flex-wrap gap-x-4 gap-y-4 xl:mx-0 xl:gap-x-8'>
                 {aboutData.map((item, itemIndex) => {
