@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <main className='h-[100vh] '>
       <Layout className='w-screen'>
-        <div className=' mx-auto flex h-full flex-col justify-center items-center'>
+        <div className=' mx-auto flex h-full flex-col justify-center items-center mt-18 lg:mt-4'>
 
         <motion.h2
           variants={fadeIn('up', 0.2)}
