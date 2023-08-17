@@ -64,7 +64,7 @@ const App = ({ Component, pageProps }) => {
 
       <main className={`${montserrat.variable} page font-mont `}>
         <AnimatePresence mode='wait'>
-          <motion.div key={router.route} className=' '>
+          <motion.div key={router.route}>
             <Transition />
             <Nav />
             <Header />

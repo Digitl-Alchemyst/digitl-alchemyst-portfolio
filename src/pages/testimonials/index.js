@@ -5,7 +5,7 @@ import Layout from '@/c/Layout'
 
 const Testimonials = () => {
   return (
-    <main className='h-[100vh] bg-primary/30 py-16 text-center items-center justify-center'>
+    <main className='py-16 text-center'>
       <div className=' mx-auto flex h-full flex-col justify-center items-center'>
         <Layout className=''>
           <motion.h2

@@ -234,7 +234,7 @@ const About = () => {
       <Head>
         <title>Steven Watkins | My Skills</title>
       </Head>
-      <main className='bg-primary/30 flex h-[100vh] flex-col items-center justify-center '>
+      <main className=' flex-col'>
         <Layout className='pt-42'>
           {/* Avatar  */}
           <motion.div
@@ -248,7 +248,7 @@ const About = () => {
           </motion.div>
 
           {/* Page Content  */}
-          <div className='mx-auto flex h-full w-full flex-col items-center xl:justify-center gap-x-6 xl:flex-row mt-36'>
+          <div className='mx-auto mt-36 flex h-full w-full flex-col items-center gap-x-6 xl:flex-row xl:justify-center'>
             {/* Text */}
             <div className='mb-8 flex-1 flex-col justify-center xl:mb-0 xl:ml-80 '>
               <motion.h2
@@ -392,7 +392,7 @@ const About = () => {
                   );
                 })}
               </div>
-            <div className='min-h-[200px] flex sm:hidden' />
+              <div className='flex min-h-[200px] sm:hidden' />
             </motion.div>
           </div>
         </Layout>

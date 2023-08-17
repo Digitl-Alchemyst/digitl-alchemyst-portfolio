@@ -9,16 +9,15 @@ import { LinkArrow } from '@/c/Icons';
 
 const Home = () => {
   return (
-    <main className='flex h-[100vh] max-h-screen w-full items-center bg-primary/30'>
+    <main className='max-h-screen'>
       {/* BG Image Layers */}
-
       <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' />
       <div className='translate-z-0 absolute h-full w-full animate-pulse bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-bottom  xl:bg-no-repeat' />
-
-      {/* Particles  */}
       <ParticlesContainer />
 
-      <Layout className='max-h-screen pt-0 md:pt-60 lg:pt-30 xl:pt-20'>
+      {/* <Layout className='pt-0 md:pt-60 lg:pt-30 xl:pt-20'> */}
+      <Layout className=''>
+
         <div className='flex w-full items-center justify-between'>
           {/* <div className='h-full w-full'> */}
 
@@ -131,7 +130,7 @@ const Home = () => {
             exit='hidden'
             transition={{ duration: 1, ease: easeInOut }}
             // removed xl:max-w-none added w-1/2
-            className='absolute right-[15%] top-[40%] hidden max-h-[25%] w-1/2 max-w-[25%] items-center xl:mr-12 xl:flex'
+            className='absolute right-[15%] top-[40%] hidden max-h-[25%] w-full  max-w-[25%] items-center xl:mr-12 xl:flex'
           >
             <Profile />
           </motion.div>

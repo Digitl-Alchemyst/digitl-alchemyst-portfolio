@@ -52,10 +52,10 @@ const Contact = () => {
       <Head>
         <title>Steven Watkins | Contact Me</title>
       </Head>
-      <main className='h-[100vh] bg-primary/30'>
+      <main className=''>
         <Layout className='pt-50 xl:pt-4'>
           <div className='h-[100vh] xl:pl-8 xl:pr-24'>
-            <div className='container mx-auto flex h-full items-center justify-center py-32 text-center md:py-8  xl:text-left'>
+            <div className='mx-auto flex h-full items-center justify-center py-32 text-center md:py-8  xl:text-left'>
               <div className='flex w-full flex-col '>
                 {/* Text */}
                 <motion.h1

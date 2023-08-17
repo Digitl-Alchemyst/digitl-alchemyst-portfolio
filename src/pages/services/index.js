@@ -6,9 +6,9 @@ import { fadeIn } from '#/variants';
 
 const Services = () => {
   return (
-    <main className='flex h-[100vh] w-full items-center justify-center bg-primary/30'>
-      <Layout className='  container mt-26 flex justify-center px-6 xl:px-0'>
-        <div className='  flex w-full flex-col items-center gap-x-8 xl:flex-row ml-2'>
+    <main className=''>
+      <Layout className='mt-26 flex justify-center px-6 xl:px-0'>
+        <div className='flex w-full flex-col items-center gap-x-8 xl:flex-row ml-2'>
           {/* Text  */}
           <div className='mb-4 flex w-full flex-col text-center lg:text-left xl:mb-0'>
             <motion.h2

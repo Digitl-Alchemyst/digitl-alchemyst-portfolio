@@ -6,9 +6,9 @@ import { fadeIn } from '#/variants';
 
 const Projects = () => {
   return (
-    <main className='flex h-[100vh] items-center justify-center bg-primary/30'>
+    <main className=''>
       <Layout className='pt-22'>
-        <div className='container'>
+        <div className=''>
           <div className='flex flex-col gap-x-8 xl:flex-row max-w-fit '>
             {/* Text  */}
             <div className='mb-4 flex flex-col text-center lg:text-left xl:mb-0 xl:min-w-fit xl:max-w-[400px]'>

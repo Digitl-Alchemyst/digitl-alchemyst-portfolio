@@ -10,23 +10,19 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    container: {
-      padding: {
-        DEFAULT: '15px',
-      },
-    },
     screens: {
       xs: '355px',
       sm: '638px',
       md: '768px',
       lg: '960px',
       xl: '1200px',
-      xxl: '2135px',
+
     },
     extend: {
       colors: {
         primary: '#131424',
         secondary: '#393A47',
+        pagebg: '#020321',
         accent: '#1c92ff',
         accent2: '#4CAF50',
         dark: '#1b1b1b',
@@ -98,11 +94,6 @@ module.exports = {
       },
     },
   },
-  container: {
-    padding: {
-      DEFAULT: '15px',
-    },
-  },
   plugins: [
     require('tailwind-scrollbar-hide'),
     require('tailwind-scrollbar'),
@@ -121,4 +112,4 @@ module.exports = {
       addUtilities(neonUtilities);
     }),
   ],
-};
+}
