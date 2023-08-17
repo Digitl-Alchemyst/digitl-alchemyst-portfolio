@@ -26,7 +26,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log('Button Click Confirmed');
 
     emailjs
       .sendForm(
@@ -52,10 +51,10 @@ const Contact = () => {
       <Head>
         <title>Steven Watkins | Contact Me</title>
       </Head>
-      <main className=''>
-        <Layout className='pt-50 xl:pt-4'>
-          <div className='h-[100vh] xl:pl-8 xl:pr-24'>
-            <div className='mx-auto flex h-full items-center justify-center py-32 text-center md:py-8  xl:text-left'>
+      <main className='h-[100vh]'>
+        <Layout className='pt-30 lg:pt-20 xl:pt-10'>
+          <div className='xl:pl-8 xl:pr-24'>
+            <div className='mx-auto flex h-full items-center justify-center py-32 text-center md:py-8 xl:text-left'>
               <div className='flex w-full flex-col '>
                 {/* Text */}
                 <motion.h1
@@ -63,7 +62,7 @@ const Contact = () => {
                   initial='hidden'
                   animate='show'
                   exit='hidden'
-                  className='h1 mb-12 mt-56 text-center sm:mt-30 md:mt-2'
+                  className='h1 mb-12 text-center'
                 >
                   Let&apos;s <span className='text-accent'>connect</span>
                 </motion.h1>
