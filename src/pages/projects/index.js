@@ -1,17 +1,17 @@
-import WorkSlider from '@/c/WorkSlider';
+import ProjectsSlider from '@/components/ProjectsSlider';
 import Bulb from '@/c/Bulb';
-
+import Layout from '@/c/Layout'
 import { motion } from 'framer-motion';
 import { fadeIn } from '#/variants';
 
-const Work = () => {
+const Projects = () => {
   return (
-    <div className='flex h-[100vh]  items-center bg-primary/30 py-36'>
-
-      <div className='container mx-auto '>
-        <div className='flex flex-col gap-x-8 xl:flex-row '>
+    <main className='h-[100vh]'>
+      <Layout className='w-screen h-full'>
+        {/* Page Content */}
+        <div className='flex h-full flex-col items-center gap-x-6 lg:flex-row xl:justify-center'>
           {/* Text  */}
-          <div className='mb-4 flex flex-col text-center lg:text-left xl:mb-0 xl:min-w-fit xl:max-w-[400px]'>
+          <div className='flex flex-col justify-center'>
             <motion.h2
               variants={fadeIn('up', 0.2)}
               initial='hidden'
@@ -26,9 +26,13 @@ const Work = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='mx-auto mb-4 max-w-[400px] lg:mx-0 xl:max-w-[600px]'
+              className='mx-auto mb-4 max-w-[400px] lg:mx-0 xl:max-w-[500px]'
             >
-              This is my work experience I have obtained with my skills.
+              This assortment of completed projects serves as a testament to my
+              expertise in the JavaScript framework and its interconnected
+              ecosystem. These endeavors exemplify my skillful navigation of
+              diverse challenges within the realm of JavaScript, showcasing both
+              technical prowess and innovative problem-solving.
             </motion.p>
           </div>
           <motion.div
@@ -36,16 +40,16 @@ const Work = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='w-full xl:max-w-[87%] xxl:max-w-[45%]'
+            className='flex w-full xl:max-w-none xl:max-h-none'
           >
             {/* Slider  */}
-            <WorkSlider />
+            <ProjectsSlider />
           </motion.div>
         </div>
-      </div>
+      </Layout>
       <Bulb />
-    </div>
+    </main>
   );
 };
 
-export default Work;
+export default Projects;

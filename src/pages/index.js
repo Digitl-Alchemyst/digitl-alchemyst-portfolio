@@ -6,23 +6,20 @@ import Profile from '@/c/Profile';
 import Layout from '@/c/Layout';
 import Link from 'next/link';
 import { LinkArrow } from '@/c/Icons';
+import ProjectsBtn from '@/components/ProjectsBtn';
 
 const Home = () => {
   return (
-    <main className='flex h-[100vh] max-h-screen w-full items-center bg-primary/30'>
+    <main className='h-[100vh] max-h-screen'>
       {/* BG Image Layers */}
-
       <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' />
       <div className='translate-z-0 absolute h-full w-full animate-pulse bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-bottom  xl:bg-no-repeat' />
-
-      {/* Particles  */}
       <ParticlesContainer />
 
-      <Layout className='max-h-screen pt-0 md:pt-60 lg:pt-30 xl:pt-20'>
+      <Layout className=''>
+        {/* Page Content */}
         <div className='flex w-full items-center justify-between'>
-          {/* <div className='h-full w-full'> */}
-
-          {/* Removed self-center */}
+          {/* Left Side Content */}
           <div className='flex w-auto flex-col items-center xl:w-1/2 xl:pt-36'>
             {/* Title */}
             <motion.h1
@@ -108,20 +105,19 @@ const Home = () => {
                   Let&apos;s Connect
                 </Link>
               </motion.div>
-
-              {/* <motion.div
-                variants={fadeIn('down', 0.5)}
-                initial='hidden'
-                animate='show'
-                exit='hidden'
-                className='hidden justify-center xl:flex'
-              >
-                <ProjectsBtn />
-              </motion.div> */}
             </div>
-            <div className='flex min-h-[150px] sm:hidden' />
+
+            {/* Animated Buttons */}
+            {/* <motion.div
+              variants={fadeIn('up', 0.5)}
+              initial='hidden'
+              animate='show'
+              exit='hidden'
+              className='hidden justify-center xl:flex mt-4 pb-2'
+            >
+              <ProjectsBtn />
+            </motion.div> */}
           </div>
-          {/* </div> */}
 
           {/* Avatar Image  */}
           <motion.div
@@ -131,7 +127,7 @@ const Home = () => {
             exit='hidden'
             transition={{ duration: 1, ease: easeInOut }}
             // removed xl:max-w-none added w-1/2
-            className='absolute right-[15%] top-[40%] hidden max-h-[25%] w-1/2 max-w-[25%] items-center xl:mr-12 xl:flex'
+            className='absolute right-[15%] top-[40%] hidden max-h-[25%] w-full  max-w-[25%] items-center xl:mr-12 xl:flex'
           >
             <Profile />
           </motion.div>

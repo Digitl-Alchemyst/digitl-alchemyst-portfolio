@@ -4,13 +4,13 @@ import Socials from './Socials';
 
 const Header = () => {
   return (
-    <header className='fixed z-30 flex w-full items-center bg-primary/30 bg-site bg-cover bg-no-repeat px-16 xl:h-[90px] xl:px-0'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col items-center justify-between gap-y-2 py-6 lg:flex-row'>
+    <header className='fixed z-30 flex w-full items-center px-16 xl:h-[90px] xl:px-0'>
+      <div className='mx-auto w-full xl:px-20'>
+        <div className='flex flex-col items-center justify-between gap-y-2 py-6 lg:flex-row w-full'>
           {/* Logo */}
           <Link href='/'>
             <Image
-              src='/logo.svg'
+              src='/svgs/logo.svg'
               alt=''
               width={420}
               height={69}

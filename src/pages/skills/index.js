@@ -234,23 +234,24 @@ const About = () => {
       <Head>
         <title>Steven Watkins | My Skills</title>
       </Head>
-      <main className='bg-primary/30 flex h-[100vh] flex-col items-center justify-center '>
-        <Layout className='pt-42'>
+
+      <main className='h-[100vh]'>
+        <Layout className='pt-32 xl:pt-2'>
           {/* Avatar  */}
           <motion.div
             variants={fadeIn('right', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='absolute bottom-0 left-0 hidden h-full max-h-[547px] w-full max-w-[437px] xl:flex xxl:max-h-[547px] xxl:max-w-[437px]'
+            className='absolute bottom-0 left-0 hidden h-full max-h-[50%] w-full max-w-[50%] xl:flex'
           >
             <Avatar />
           </motion.div>
 
           {/* Page Content  */}
-          <div className='mx-auto flex h-full w-full flex-col items-center xl:justify-center gap-x-6 xl:flex-row mt-36'>
-            {/* Text */}
-            <div className='mb-8 flex-1 flex-col justify-center xl:mb-0 xl:ml-80 '>
+          <div className='mx-auto flex h-full w-full flex-col items-center gap-x-6 xl:flex-row xl:justify-center'>
+            {/* Text & Counters */}
+            <div className='flex flex-col justify-center xl:ml-80 '>
               <motion.h2
                 variants={fadeIn('right', 0.3)}
                 initial='hidden'
@@ -268,7 +269,7 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='mx-auto mb-10  max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-18 xl:max-w-[700px] xl:px-4 xxl:max-w-[900px]'
+                className='mx-auto  mb-10 max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-10 xl:max-w-[850px] xl:px-4 xl:text-base'
               >
                 Throughout my life, I&apos;ve been drawn to the world of
                 technology, and it was in web application development that I
@@ -300,7 +301,7 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='mx-auto md:max-w-2xl xl:mx-0 xl:max-w-4xl'
+                className='mx-auto md:max-w-2xl xl:mx-0 xl:max-w-3xl'
               >
                 <div className='flex gap-x-2 xl:gap-x-3 '>
                   {/* Years of Experience  */}
@@ -349,9 +350,9 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='flex h-[480px] w-full flex-col sm:mb-10 md:mb-0 xl:max-w-[48%] '
+              className='flex h-[480px] w-full flex-col sm:mb-10 md:mb-0 xl:max-w-[48%]'
             >
-              <div className='mx-auto mb-4 flex flex-wrap gap-x-4 gap-y-4 xl:mx-0 xl:gap-x-8'>
+              <div className='mx-auto mb-6 flex flex-wrap gap-x-4 gap-y-4 xl:mx-0 xl:gap-x-8'>
                 {aboutData.map((item, itemIndex) => {
                   return (
                     <div
@@ -392,7 +393,7 @@ const About = () => {
                   );
                 })}
               </div>
-            <div className='min-h-[200px] flex sm:hidden' />
+              <div className='flex min-h-[200px] sm:hidden' />
             </motion.div>
           </div>
         </Layout>

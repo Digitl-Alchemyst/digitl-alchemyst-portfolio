@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Z-Index Transforms */
 .translate-z-0 {
   transform: translateZ(0px);
 }
 .translate-z-1 {
   transform: translateZ(1px);
 }
+
+/* Swiper Styles */
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
@@ -18,22 +21,32 @@
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #1c92ff;
+  color: #4CAF50;
 }
 
-html,
+.text-stroke-black { -webkit-text-stroke-color: #1e293b }
+.text-stroke-white { -webkit-text-stroke-color: #e2e8f0 }
+.text-stroke { -webkit-text-stroke-color: #020321 }
+.text-stroke-accent { -webkit-text-stroke-color: #1c92ff }
+.text-stroke-accent2 { -webkit-text-stroke-color: #4CAF50 }
+
+
+/* html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
+} */
 
 @layer base {
   body {
-    @apply bg-secondary bg-gradient-to-r from-primary/10 via-black/30 to-black/10 leading-relaxed scrollbar-hide;
+    @apply bg-pagebg bg-gradient-to-r from-primary/10 via-black/30 to-black/10 leading-relaxed scrollbar-hide;
+  }
+  main {
+    @apply flex w-full items-center justify-center bg-primary/30;
   }
   .page {
     /* min-h-screen NEW h-screen OLD */
-    @apply min-h-screen w-full overflow-scroll bg-site bg-cover bg-no-repeat text-slate-300 scrollbar-hide ;
+    @apply min-h-screen w-full overflow-scroll bg-site bg-cover bg-no-repeat text-slate-300 overflow-x-hidden scrollbar-hide;
   }
   .h1 {
     @apply mb-8 text-[35px] font-bold leading-tight md:text-[60px] md:leading-[1.3];

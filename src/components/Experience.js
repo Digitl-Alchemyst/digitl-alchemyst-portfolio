@@ -46,7 +46,7 @@ const WorkExperience = () => {
     offset: ['start end', 'center start'],
   });
   return (
-    <div className=''>
+    <div className='w-full h-full'>
       <h2 className='mb-32 w-full text-center text-6xl font-bold'>
         Experience
       </h2>
