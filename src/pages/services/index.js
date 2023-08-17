@@ -12,7 +12,7 @@ const Services = () => {
         <title>Steven Watkins | My Services</title>
       </Head>
 
-      <main className=''>
+      <main className='h-[100vh]'>
         <Layout className='w-screen'>
           <Bulb />
 

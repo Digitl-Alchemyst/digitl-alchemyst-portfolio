@@ -10,7 +10,7 @@ import ProjectsBtn from '@/components/ProjectsBtn';
 
 const Home = () => {
   return (
-    <main className='max-h-screen'>
+    <main className='h-[100vh] max-h-screen'>
       {/* BG Image Layers */}
       <div className='translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' />
       <div className='translate-z-0 absolute h-full w-full animate-pulse bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-bottom  xl:bg-no-repeat' />
@@ -117,7 +117,6 @@ const Home = () => {
             >
               <ProjectsBtn />
             </motion.div> */}
-
           </div>
 
           {/* Avatar Image  */}

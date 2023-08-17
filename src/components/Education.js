@@ -37,7 +37,7 @@ const Education = () => {
     offset: ['start end', 'center start'],
   });
   return (
-    <div className='my-64'>
+    <div className='w-full h-full mt-28'>
       <h2 className='mb-32 w-full text-center text-6xl font-bold'>Education</h2>
       <div ref={ref} className='relative mx-auto w-[85%] '>
         <motion.div

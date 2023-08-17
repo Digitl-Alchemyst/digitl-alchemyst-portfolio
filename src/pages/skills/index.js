@@ -235,9 +235,8 @@ const About = () => {
         <title>Steven Watkins | My Skills</title>
       </Head>
 
-      <main className=''>
+      <main className='h-[100vh]'>
         <Layout className='pt-32 xl:pt-2'>
-
           {/* Avatar  */}
           <motion.div
             variants={fadeIn('right', 0.2)}
@@ -251,7 +250,6 @@ const About = () => {
 
           {/* Page Content  */}
           <div className='mx-auto flex h-full w-full flex-col items-center gap-x-6 xl:flex-row xl:justify-center'>
-
             {/* Text & Counters */}
             <div className='flex flex-col justify-center xl:ml-80 '>
               <motion.h2
@@ -271,7 +269,7 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='mx-auto  mb-10 max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:text-base xl:mx-0 xl:mb-10 xl:max-w-[850px] xl:px-4'
+                className='mx-auto  mb-10 max-w-[500px] rounded-lg border border-solid border-accent2/30 bg-slate-700/80 px-3 py-5 text-xs text-sky-300 md:text-sm xl:mx-0 xl:mb-10 xl:max-w-[850px] xl:px-4 xl:text-base'
               >
                 Throughout my life, I&apos;ve been drawn to the world of
                 technology, and it was in web application development that I
