@@ -6,6 +6,7 @@ import Profile from '@/c/Profile';
 import Layout from '@/c/Layout';
 import Link from 'next/link';
 import { LinkArrow } from '@/c/Icons';
+import ProjectsBtn from '@/components/ProjectsBtn';
 
 const Home = () => {
   return (
@@ -15,13 +16,10 @@ const Home = () => {
       <div className='translate-z-0 absolute h-full w-full animate-pulse bg-none mix-blend-color-dodge xl:bg-alchemy xl:bg-cover xl:bg-bottom  xl:bg-no-repeat' />
       <ParticlesContainer />
 
-      {/* <Layout className='pt-0 md:pt-60 lg:pt-30 xl:pt-20'> */}
       <Layout className=''>
-
+        {/* Page Content */}
         <div className='flex w-full items-center justify-between'>
-          {/* <div className='h-full w-full'> */}
-
-          {/* Removed self-center */}
+          {/* Left Side Content */}
           <div className='flex w-auto flex-col items-center xl:w-1/2 xl:pt-36'>
             {/* Title */}
             <motion.h1
@@ -107,20 +105,20 @@ const Home = () => {
                   Let&apos;s Connect
                 </Link>
               </motion.div>
-
-              {/* <motion.div
-                variants={fadeIn('down', 0.5)}
-                initial='hidden'
-                animate='show'
-                exit='hidden'
-                className='hidden justify-center xl:flex'
-              >
-                <ProjectsBtn />
-              </motion.div> */}
             </div>
-            <div className='flex min-h-[150px] sm:hidden' />
+
+            {/* Animated Buttons */}
+            {/* <motion.div
+              variants={fadeIn('up', 0.5)}
+              initial='hidden'
+              animate='show'
+              exit='hidden'
+              className='hidden justify-center xl:flex mt-4 pb-2'
+            >
+              <ProjectsBtn />
+            </motion.div> */}
+
           </div>
-          {/* </div> */}
 
           {/* Avatar Image  */}
           <motion.div
