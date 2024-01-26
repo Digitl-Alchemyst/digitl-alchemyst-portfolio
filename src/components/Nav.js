@@ -6,6 +6,7 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from 'react-icons/hi2';
+import { LiaProjectDiagramSolid } from 'react-icons/lia';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -15,7 +16,7 @@ const navLinks = [
   { name: 'skills', path: '/skills', icon: <HiUser /> },
   { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
   { name: 'experience', path: '/experience', icon: <HiViewColumns /> },
-  { name: 'projects', path: '/projects', icon: <HiViewColumns /> },
+  { name: 'projects', path: '/projects', icon: <LiaProjectDiagramSolid /> },
   {
     name: 'testimonials',
     path: '/testimonials',

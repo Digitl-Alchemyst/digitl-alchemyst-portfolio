@@ -46,43 +46,43 @@ const WorkExperience = () => {
     offset: ['start end', 'center start'],
   });
   return (
-    <div className='w-full h-full'>
+    <div className='h-full w-full'>
       <h2 className='mb-32 w-full text-center text-6xl font-bold'>
         Experience
       </h2>
       <div ref={ref} className='relative mx-auto w-[85%] '>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 h-full w-[4px] origin-top rounded-md bg-light mt-1'
+          className='absolute left-9 top-0 mt-1 h-full w-[4px] origin-top rounded-md bg-light'
         />
 
         <ul className='ml-4 flex w-full flex-col justify-between'>
           <WorkExp
             position='Full Stack Developer / Streaming Server Engineer'
             company='UnTelevised Media'
-            companyLink='https://www.youtube.com/c/UnTelevisedMedia'
-            time='2018 - 2021'
+            companyLink='https://untelevised.media'
+            time='2019 - Present'
             location='Denver, CO'
             duty={`
-    • Demonstrated ability to produce high-quality videos and articles on specific subjects, delivering outstanding results in time-sensitive situations.<br>
-    • Successfully led rebranding, creating captivating logos and a compelling social media presence, significantly enhancing company visibility.<br>
-    • Excelled as a frontline field reporter and photo/video journalist, providing unparalleled coverage of breaking high-profile events .<br>
-    • Received accolades for fearless reporting from dangerous situations, displaying unwavering dedication to impactful news coverage.<br>
-    • Excelled in news writing, editing, fact-checking, and captivating video content for breaking news, bolstering reputation as a trustworthy source.<br>
-    • Regular freelance work for Ruptly & AJ+
+    • Orchestrated the seamless transition through three website iterations, showcasing proficiency in WordPress, designing a MongoDB-based blog-style site, and culminating in the development of the current site using Next.js & Sanity.
+    • Led the creation of a customized CMS Interface and backend Schema, enhancing content production control and quality.
+    • Innovated custom live streaming software, optimizing video production and elevating the streaming experience.
+    • Engineered an advanced Live Stream server, enabling on-location broadcasts to the studio for superior composure and broadcast quality.
+    • Innovated a dynamic News Ticker for live stream production, leveraging advanced technology to extract headlines directly from website content, enhancing real-time engagement and information delivery.
             `}
           />
 
           <WorkExp
             position='Web Developer / Social Media Manager'
             company='Decima Tech Solutions'
+            companyLink='http://decima-tech.dx.am'
             time='2015 - Present'
             location='New Orleans, LA'
             duty={`
-    • Designed and developed a comprehensive multi-page website, increasing online visibility and generating more leads.<br>
-    • Led the successful creation of the company's brand identity and logo, enhancing brand recognition and trust.<br>
-    • Created compelling advertisements using jobsite photos and videos, resulting in increased inquiries and conversions.<br>
-    • Produced engaging on-site video content, showcasing completed projects and strengthening the company's reputation.<br>
+    • Designed and developed a comprehensive multi-page website, increasing online visibility and generating more leads.
+    • Led the successful creation of the company's brand identity and logo, enhancing brand recognition and trust.
+    • Created compelling advertisements using jobsite photos and videos, resulting in increased inquiries and conversions.
+    • Produced engaging on-site video content, showcasing completed projects and strengthening the company's reputation.
     • Implemented SEO and digital marketing strategies, improving search engine rankings and establishing the company as a top competitor.
   `}
           />
@@ -93,13 +93,10 @@ const WorkExperience = () => {
             time='November 2013 - March 2019'
             location='Washington, D.C.'
             duty={`
-    • Create time-sensitive promotional and educational videos on specific subjects for the media outlet.<br>
-    • Design and manage multiple websites for the media group and partner organizations.<br>
-    • Develop brand logos, including images and animated motion graphics.<br>
-    • Establish distinctive brand identities and social media presence for 23 media outlets and organizations.<br>
-    • Serve as a frontline field reporter and photo/video journalist covering breaking high-profile events.<br>
-    • Earn recognition from peers for courageous coverage in hazardous situations.<br>
-    • Write, edit, fact-check, publish news articles, and produce video content for over 20 independent news outlets and educational publications.
+    • Create time-sensitive promotional and educational videos on specific subjects for the media outlet.
+    • Design and manage multiple websites for the media group and partner organizations.
+    • Develop brand logos, including images and animated motion graphics.
+    • Establish distinctive brand identities and social media presence for 23 media outlets and organizations.
   `}
           />
 

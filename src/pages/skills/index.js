@@ -176,6 +176,10 @@ const aboutData = [
         title: 'Block-Crosser',
         stage: 'Auth Modal',
       },
+      {
+        title: 'Anchor',
+        stage: 'Next.JS Pages to App router conversion & UI Overhaul',
+      },
     ],
   },
   {
@@ -184,7 +188,7 @@ const aboutData = [
       {
         title:
           'Full Stack Developer / Streaming Server Engineer - UnTelevised Media',
-        stage: '2018 - 2021',
+        stage: '2018 - 2021 / 2023 - Current',
       },
       {
         title: 'Web Developer - Decima Tech Solutions ',

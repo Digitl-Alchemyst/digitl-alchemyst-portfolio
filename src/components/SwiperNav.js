@@ -5,7 +5,7 @@ const SwiperNav = () => {
   const swiper = useSwiper();
 
   return (
-    <div className='justify-between flex cursor-pointer items-center mx-5 mt-10 gap-x-16'>
+    <div className='justify-between flex cursor-pointer items-center mx-5 mt-4 gap-x-16'>
       <button onClick={() => swiper.slidePrev()} className='button'>
         Prev
       </button>
