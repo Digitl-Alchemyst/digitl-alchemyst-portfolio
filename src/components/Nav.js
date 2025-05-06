@@ -14,14 +14,14 @@ import { useRouter } from 'next/router';
 const navLinks = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'skills', path: '/skills', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
+  // { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
   { name: 'experience', path: '/experience', icon: <HiViewColumns /> },
   { name: 'projects', path: '/projects', icon: <LiaProjectDiagramSolid /> },
-  {
-    name: 'testimonials',
-    path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
-  },
+  // {
+  //   name: 'testimonials',
+  //   path: '/testimonials',
+  //   icon: <HiChatBubbleBottomCenterText />,
+  // },
   {
     name: 'contact',
     path: '/contact',

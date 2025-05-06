@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Add these classes to your globals.css file */
+.animate-fill {
+  transform: scale(1) !important;
+  transition: transform 1s ease-in-out;
+}
+
+/* This is for smoother animation */
+@keyframes fillCircle {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 /* Custom Z-Index Transforms */
 .translate-z-0 {
   transform: translateZ(0px);
